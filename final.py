@@ -5,12 +5,12 @@ dataset_2 = []
 
 with open("dataset_1.csv", "r") as f:
     csvreader = csv.reader(f)
-    for row in csvreader: 
+    for row in csvreader:
         dataset_1.append(row)
 
 with open("dataset_2_sorted.csv", "r") as f:
     csvreader = csv.reader(f)
-    for row in csvreader: 
+    for row in csvreader:
         dataset_2.append(row)
 
 headers_1 = dataset_1[0]
@@ -28,5 +28,3 @@ with open("final.csv", "a+") as f:
     csvwriter = csv.writer(f)
     csvwriter.writerow(headers)
     csvwriter.writerows(planet_data)
-
-    
